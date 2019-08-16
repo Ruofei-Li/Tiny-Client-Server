@@ -39,6 +39,7 @@ gcc adder.c -o adder
 
 在终端运行编译好的主程序，设定一个端口号（介于1024-65535之间）：
 ```
+cd ..
 ./server 1028
 ```
 
@@ -75,7 +76,7 @@ http://localhost:1028/cgi-bin/adder?10&20
 ```
 telnet localhost 1028
 ```
-* 输入HTTP请求报头：
+* 输入HTTP请求报头，并敲两次回车：
 ```
 get /test.jpg HTTP/1.0
 ```
@@ -88,7 +89,7 @@ get /test.jpg HTTP/1.0
 ```
 telnet localhost 1028
 ```
-* 输入HTTP请求报头：
+* 输入HTTP请求报头，并敲两次回车：
 ```
 get /cgi-bin/adder?10&20 HTTP/1.0
 ```
