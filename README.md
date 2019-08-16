@@ -84,7 +84,7 @@ telnet localhost 1028
 ```
 get /test.jpg HTTP/1.0
 ```
-* 由于终端不能显示图片，所以输出图片编码，看起来是乱码，你也可以测试html或无格式文件以正常显示文件内容。
+* 你也可以测试html文件、jpg、png、gif图片，访问图片文件时，终端显示的是图片编码。
 
 ![terminal_static](/img/terminal_static.jpg)
 
