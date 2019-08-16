@@ -14,6 +14,7 @@
 ```
 gcc -v
 ```
+3. 如果提示没有安装GCC，请参考[Liunx安装GCC](https://www.cnblogs.com/dybk/p/8085685.html)
 
 ### Clone the repository
 ```
