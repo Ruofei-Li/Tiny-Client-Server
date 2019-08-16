@@ -24,16 +24,28 @@ git clone https://github.com/Ruofei-Li/Tiny-Client-Server.git
 ```
 cd Tiny-Client-Server
 gcc server.c helper.c -o server
+cd cgi-bin
+gcc adder.c -o adder
 ```
 
-## Running
+## Running server
 
-在当前目录下放一张jpg格式的图片，加入命名为test.jpg
+### Prepare documents
+
+在当前目录下放一张jpg格式的图片，命名为test.jpg
+
+### Start the server
 
 在终端运行编译好的主程序，设定一个端口号（介于1024-65535之间）：
 ```
 ./server 1028
 ```
+
+## Testing on browser
+
+服务器提供两种服务：静态服务和动态服务，可以通过浏览器请求提供服务。
+
+### static server
 
 打开浏览器，在地址栏输入：
 ```
@@ -41,38 +53,48 @@ http://localhost:1028/test.jpg
 ```
 可以看到浏览器成功加载出了事先放入的图片。除此以外，你也可以放入png、gif格式的图片，或者html、无格式文件等。
 
+
+### dynamic server
+
+在浏览器地址栏输入：
+```
+http://localhost:1028/cgi-bin/adder?10&20 
+```
+服务器提供一个简单的加法CGI程序，浏览器传入参数，服务器计算出结果并将信息显示在浏览器中。
+
+
+
+## Testing on terminal
+
 除了可以在浏览器里访问服务器的内容，你也可以在终端访问。
 
+### static server
 
-服务器就启动成功了，再打开一个终端，输入：
+* 再打开一个终端，输入：
 ```
 telnet localhost 1028
 ```
-
-出现连接到本地的信息，再输入HTTP请求：
+* 输入HTTP请求报头：
 ```
-get 
+get /test.jpg HTTP/1.0
 ```
+* 由于终端不能显示图片，所以输出图片编码，看起来是乱码，你也可以测试html或无格式文件以正常显示文件内容。
 
-### Break down into end to end tests
 
-Explain what these tests test and why
+### dynamic server
 
+* 终端输入：
 ```
-Give an example
+telnet localhost 1028
 ```
-
-### And coding style tests
-
-Explain what these tests test and why
-
+* 输入HTTP请求报头：
 ```
-Give an example
+get /cgi-bin/adder?10&20 HTTP/1.0
 ```
+* 输出HTTP响应信息和计算结果。
 
-## Deployment
 
-Add additional notes about how to deploy this on a live system
+
 
 ## Built With
 
@@ -98,9 +120,5 @@ See also the list of [contributors](https://github.com/your/project/contributors
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
 
