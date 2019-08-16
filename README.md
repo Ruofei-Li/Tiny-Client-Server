@@ -55,7 +55,7 @@ http://localhost:1028/test.jpg
 ```
 * 可以看到浏览器成功加载出了事先放入的图片。除此以外，你也可以访问png、gif格式的图片，或者html、无格式文件等，前提是你的服务器主目录下有相应的文件。
 
-![Alt text](/img/test.jpg)
+![Alt text](/img/browser_static.jpg)
 
 
 ### dynamic service
