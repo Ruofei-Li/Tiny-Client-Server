@@ -33,7 +33,7 @@ gcc adder.c -o adder
 
 ### Prepare documents
 
-在当前目录下放一张jpg格式的图片，命名为test.jpg
+在主目录下放一张jpg格式的图片，命名为test.jpg
 
 ### Start the server
 
