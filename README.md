@@ -72,7 +72,7 @@ http://localhost:1028/cgi-bin/adder?10&20
 
 ### static service
 
-* 再打开一个终端，输入：
+* 再打开一个终端（之前的终端不要关闭），输入：
 ```
 telnet localhost 1028
 ```
