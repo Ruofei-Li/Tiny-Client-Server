@@ -47,7 +47,7 @@ cd ..
 
 服务器提供两种服务：静态服务和动态服务，可以通过浏览器请求提供服务。
 
-### static server
+### static service
 
 * 打开浏览器，在地址栏输入：
 ```
@@ -56,7 +56,7 @@ http://localhost:1028/test.jpg
 * 可以看到浏览器成功加载出了事先放入的图片。除此以外，你也可以放入png、gif格式的图片，或者html、无格式文件等。
 
 
-### dynamic server
+### dynamic service
 
 * 在浏览器地址栏输入：
 ```
@@ -70,7 +70,7 @@ http://localhost:1028/cgi-bin/adder?10&20
 
 除了可以在浏览器里访问服务器的内容，你也可以在终端访问。
 
-### static server
+### static service
 
 * 再打开一个终端，输入：
 ```
@@ -83,7 +83,7 @@ get /test.jpg HTTP/1.0
 * 由于终端不能显示图片，所以输出图片编码，看起来是乱码，你也可以测试html或无格式文件以正常显示文件内容。
 
 
-### dynamic server
+### dynamic service
 
 * 终端输入：
 ```
