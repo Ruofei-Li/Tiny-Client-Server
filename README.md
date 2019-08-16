@@ -1,6 +1,6 @@
 # Tiny-Client-Server
 
-这个项目代码是一个小型的却功能基本齐全的Web服务器。 
+这个项目是一个小型的、功能基本齐全的Web服务器。在简单的编译运行之后，便可在本地创建一个小型的服务器，支持通过浏览器和终端访问服务器，服务器提供简单的静态服务和动态服务。
 
 ## Getting Started
 
@@ -47,20 +47,20 @@ gcc adder.c -o adder
 
 ### static server
 
-打开浏览器，在地址栏输入：
+* 打开浏览器，在地址栏输入：
 ```
 http://localhost:1028/test.jpg
 ```
-可以看到浏览器成功加载出了事先放入的图片。除此以外，你也可以放入png、gif格式的图片，或者html、无格式文件等。
+* 可以看到浏览器成功加载出了事先放入的图片。除此以外，你也可以放入png、gif格式的图片，或者html、无格式文件等。
 
 
 ### dynamic server
 
-在浏览器地址栏输入：
+* 在浏览器地址栏输入：
 ```
 http://localhost:1028/cgi-bin/adder?10&20 
 ```
-服务器提供一个简单的加法CGI程序，浏览器传入参数，服务器计算出结果并将信息显示在浏览器中。
+* 服务器提供一个简单的加法CGI程序，浏览器传入参数，服务器计算出结果并将信息显示在浏览器中。
 
 
 
@@ -94,31 +94,6 @@ get /cgi-bin/adder?10&20 HTTP/1.0
 * 输出HTTP响应信息和计算结果。
 
 
+## Contact
 
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-
-
+任何关于此项目的问题，或者有兴趣交流的朋友，请联系liruofei0128@163.com
