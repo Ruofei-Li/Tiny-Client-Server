@@ -1,5 +1,5 @@
 //一个小型的CGI程序，计算两数之和
-#include "helper.h"
+#include "../helper.h"
 
 int main(void) {
     char *buf, *p;
