@@ -55,7 +55,7 @@ http://localhost:1028/test.jpg
 ```
 * 可以看到浏览器成功加载出了事先放入的图片。除此以外，你也可以访问png、gif格式的图片，或者html、无格式文件等，前提是你的服务器主目录下有相应的文件。
 
-![Alt text](/img/browser_static.jpg)
+![browser_static](/img/browser_static.jpg)
 
 
 ### dynamic service
@@ -65,6 +65,8 @@ http://localhost:1028/test.jpg
 http://localhost:1028/cgi-bin/adder?10&20 
 ```
 * 服务器提供一个简单的加法CGI程序，浏览器传入参数，服务器计算出结果并将信息显示在浏览器中。事实上，你也可以按照CGI标准编写更加复杂的程序，用来为客户端提供服务。
+
+![browser_dynamic](/img/browser_dynamic.jpg)
 
 
 
@@ -84,6 +86,8 @@ get /test.jpg HTTP/1.0
 ```
 * 由于终端不能显示图片，所以输出图片编码，看起来是乱码，你也可以测试html或无格式文件以正常显示文件内容。
 
+![terminal_static](/img/terminal_static.jpg)
+
 
 ### dynamic service
 
@@ -96,6 +100,8 @@ telnet localhost 1028
 get /cgi-bin/adder?10&20 HTTP/1.0
 ```
 * 输出HTTP响应信息和计算结果。
+
+![terminal_dynamic](/img/terminal_dynamic.jpg)
 
 
 ## Contact
