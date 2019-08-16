@@ -82,7 +82,7 @@ telnet localhost 1028
 ```
 * 输入HTTP请求报头，并敲两次回车：
 ```
-get /test.jpg HTTP/1.0
+get /test HTTP/1.0
 ```
 * 你也可以测试html文件、jpg、png、gif图片，访问图片文件时，终端显示的是图片编码。
 
